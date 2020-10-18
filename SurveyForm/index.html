@@ -12,22 +12,96 @@
 
     <div class="container">
     <form action="" id="survey-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="firstname" placeholder="Full Name">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Enter your name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="number" id="number" min="10" max="99" placeholder="Enter your age">
+        
+        <label for="currentRole">What role are you looking for?</label>
+        <select name="role" id="dropdown" required>
+            <option disabled selected value>Select a role</option>
+            <option value="FE"> Frontend Developer</option>
+            <option value="BE">Backend Developer</option>
+            <option value="AE">Android Developer</option>
+            <option value="iOS">iOS Developer</option>
         </select>
-    
-        <input type="submit" value="Submit">
+
+        <label for="heardOfUs">How did you hear of us?</label>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="radio" name="user-recommend" class="input-radio" value="Friend">
+            <label>From a friend</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="radio" name="user-recommend" class="input-radio" value="socialMedia">
+            <label>From social media</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="radio" name="user-recommend" class="input-radio" value="Website">
+            <label>From our website</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="radio" name="user-recommend" class="input-radio" value="None" checked>
+            <label>None</label>
+        </div>
+
+        <label for="mostComfortable">What technology are you comfortable with? (Check all that apply) </label>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="Html">
+            <label>Html</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="Css">
+            <label>CSS</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="React">
+            <label>React</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="Vue">
+            <label>Vue</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="Angular">
+            <label>Angular</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="NodeJS">
+            <label>Node JS</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="PHP">
+            <label>PHP</label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <input type="checkbox" name="user-recommend" class="input-checkbox" value="Django">
+            <label>Django</label>
+        </div>
+
+        <label for="workForUs">Why do you want to work with us?</label>
+        <textarea name="workForUs" id="textarea" cols="30" rows="10" style="width: 100%;"></textarea>
+        
+
+        <input type="submit" id="submit" value="Submit">
     </form>
     </div>
 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

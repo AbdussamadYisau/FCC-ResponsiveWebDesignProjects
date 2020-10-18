@@ -11,7 +11,7 @@ body {
 
 
 
-input[type=text], select {
+input, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -21,16 +21,13 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type=radio], input[type=checkbox] {
+    margin:0;
+    margin-top: 2px;
+    padding: 0;
+    display: inline;
+    width: auto;
 }
-  
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -65,3 +62,4 @@ div.container {
     text-align: left;
     
 }
+
